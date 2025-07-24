@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Catapult Tower
   m_EditorClassIdentifier: 
   <KorName>k__BackingField: "\uD22C\uC11D\uAE30 \uD0C0\uC6CC"
-  <Level>k__BackingField: 1
   <MaxLevel>k__BackingField: 9
   <Damage>k__BackingField: 13
-  <AttackSpeed>k__BackingField: 0.7
+  <AttackSpeed>k__BackingField: 2
   <Range>k__BackingField: 6
   <ProjectileSpeed>k__BackingField: 5
   <Growth_Damage>k__BackingField: 3

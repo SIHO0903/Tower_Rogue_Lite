@@ -22,10 +22,9 @@ public enum BGMType
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
-    [Tooltip("ContextMenu의 InitializeSoundLists를 실행시켜 리스트이름을 초기화하세요")]
     public AudioClip[] soundList;
     public AudioClip[] bgmList;
-    //싱글턴
+
     public static SoundManager instance;
 
     private AudioSource sfxAudioSource;
@@ -62,13 +61,11 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySound(SoundType sound)
     {
-
         sfxAudioSource.PlayOneShot(soundList[(int)sound], uiSound.SFXVolume());
-        //sfxAudioSource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
+
     }
     public void PlayBGM(BGMType sound, float volume = 1)
     {
-        //bgmAudioSource.outputAudioMixerGroup = mixer.FindMatchingGroups("BGM")[0];
         bgmAudioSource.clip = bgmList[(int)sound];
         bgmAudioSource.loop = true;
         bgmAudioSource.volume = volume;

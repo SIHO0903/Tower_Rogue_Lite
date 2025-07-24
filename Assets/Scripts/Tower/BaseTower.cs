@@ -23,12 +23,12 @@ public abstract class BaseTower : MonoBehaviour
         bodySprite = sprites[1];
         return new TowerInfo(transform, headSprite.sprite, headSprite.transform, bodySprite.sprite, bodySprite.transform);
     }
-    // 이름은 공통으로 가져감
+
     public virtual string GetName()
     {
         return $"{TowerData.KorName}";
     }
 
-    // 설명 문자열 (시너지 or 공격력 등)
+
     public abstract string GetDescription();
 }

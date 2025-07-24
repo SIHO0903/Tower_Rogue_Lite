@@ -10,7 +10,6 @@ public class GameManager : Singleton<GameManager>
     {
         UpgradeData.TownHallHealth -= damage;
         SoundManager.instance.PlaySound(SoundType.GetHit);
-        //Debug.Log("현재체력 : " + heath);
         if (UpgradeData.TownHallHealth <= 0)
         {
             GameEnd();
@@ -18,7 +17,6 @@ public class GameManager : Singleton<GameManager>
     }
     void GameEnd()
     {
-        // 적유닛 삭제
         PopUpEnd?.Invoke();
         GoldSaveData goldSaveData = new GoldSaveData();
         goldSaveData.gold = MinerManager.Gold;

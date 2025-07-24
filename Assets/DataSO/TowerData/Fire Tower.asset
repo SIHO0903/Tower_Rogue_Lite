@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Fire Tower
   m_EditorClassIdentifier: 
   <KorName>k__BackingField: "\uD654\uC5FC \uD0C0\uC6CC"
-  <Level>k__BackingField: 1
   <MaxLevel>k__BackingField: 9
   <Damage>k__BackingField: 11
-  <AttackSpeed>k__BackingField: 1.2
+  <AttackSpeed>k__BackingField: 1
   <Range>k__BackingField: 3
   <ProjectileSpeed>k__BackingField: 5
   <Growth_Damage>k__BackingField: 3

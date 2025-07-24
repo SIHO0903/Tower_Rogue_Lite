@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
     }
     private void Start()
     {
-        TEMPSpawnEnemy();
+        //TEMPSpawnEnemy();
     }
     void ClearEnemy()
     {
@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         levelTimer += Time.deltaTime;
-        //SpawnTimer();
+        SpawnTimer();
 
     }
 

@@ -35,6 +35,7 @@ public class SelectManager : MonoBehaviour
             InitializeButton(i, PoolEnum.SynergyTower, "Synergy Tower "+i,SynergyTowerSelects);
         }
         UIInGameMenu.ReStart += ReStartReSelect;
+
     }
     void InitializeButton(int index,PoolEnum poolEnum, string towerName, Button[] buttons)
     {
@@ -49,8 +50,8 @@ public class SelectManager : MonoBehaviour
             selectedTowerPrefab = PoolManager.Instance.Get(poolEnum, towerName, Vector3.zero, Quaternion.identity, towerManager.transform);
             selectedTowerPrefab.SetActive(false);
             LevelSelect.SetActive(false);
-            gridDrawer.gameObject.SetActive(true);
             SetActiveFalseAllSelects();
+            Debug.Log("시너지");
         });
     }
     void SetButtonDescription(int index, GameObject towerPrefab, Button[] buttons)
@@ -65,7 +66,8 @@ public class SelectManager : MonoBehaviour
     void Update()
     {
         HandleTowerPlacement();
-        HandleTempUIControls();
+        //HandleTempUIControls();
+
     }
 
     void HandleTowerPlacement()
@@ -117,6 +119,7 @@ public class SelectManager : MonoBehaviour
         {
             targetButtons[idx].gameObject.SetActive(true);
         }
+        gridDrawer.gameObject.SetActive(true);
 
     }
     void ReStartReSelect()

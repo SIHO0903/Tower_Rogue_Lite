@@ -46,7 +46,6 @@ public class GridDrawer : MonoBehaviour
         {
             levelGrid[snapPos] += lvl;
             UpdateTileGridTxt(snapPos);
-            //Debug.Log(levelGrid[snapPos]);
         }
 
 
@@ -89,7 +88,6 @@ public class GridDrawer : MonoBehaviour
     }
     public void UpdateTileGridTxt(Vector2 oldPos)
     {
-        //Debug.Log("RemoveTileGridTxt" + oldPos + " /// " + levelGrid[oldPos]);
         if (levelGrid[oldPos] == 0)
             tiles[oldPos].text = string.Empty;
         else

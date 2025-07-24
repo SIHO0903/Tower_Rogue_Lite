@@ -43,10 +43,8 @@ public class ViewInGameOption : MonoBehaviour
         VolumeData volumeData = Constants.JsonLoad<VolumeData>(Constants.JsonFileName.Volume);
         if(volumeData == null)
         {
-            // 기본값 설정
             volumeData = new VolumeData(0.5f, 0.5f);
 
-            // 새 파일 저장
             Constants.JsonSave(volumeData, Constants.JsonFileName.Volume);
         }
         BGMSlider.value = volumeData.bgm;

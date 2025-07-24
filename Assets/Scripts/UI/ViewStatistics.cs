@@ -38,51 +38,52 @@ public class ViewStatistics : MonoBehaviour
         currentEXP = 0;
         Level_Txt(currentLevel);
         Gold_Txt();
+        TowerAmount_Txt(0);
     }
-    public void Timer_Txt(float currentTime)//
+    public void Timer_Txt(float currentTime)
     {
         int min = Mathf.FloorToInt(currentTime / 60);
         int sec = Mathf.FloorToInt(currentTime % 60);
         Txt_Timer.text = string.Format($"{min:D2} : {sec:D2}");
     }
-    void Level_Txt(int currentLevel)//
+    void Level_Txt(int currentLevel)
     {
         Txt_Level.text = currentLevel.ToString();
     }
-    void EnemyKillCount_Txt(int killCount)//
+    void EnemyKillCount_Txt(int killCount)
     {
         Txt_DestoryEnemy.text = killCount.ToString();
     }
-    void Score_Txt(float score)//
+    void Score_Txt(float score)
     {
         Txt_Score.text = score.ToString();
     }
-    public void EnemyLevel_Txt(float enemyScaling)//
+    public void EnemyLevel_Txt(float enemyScaling)
     {
         this.enemyScaling = enemyScaling;
         Txt_Scaling.text = enemyScaling.ToString();
     }
-    public void EnemySpawnSpeed_Txt(float spawnSpeed)//
+    public void EnemySpawnSpeed_Txt(float spawnSpeed)
     {
         Txt_SpawnSpeed.text = spawnSpeed + "√ ";
     }
-    public void EnemySpawnAmount_Txt(float spawnAmount)//
+    public void EnemySpawnAmount_Txt(float spawnAmount)
     {
         Txt_SpawnAmount.text = spawnAmount.ToString();
     }
-    public void MinerCount_Txt(int minerCount)//
+    public void MinerCount_Txt(int minerCount)
     {
         Txt_Miner.text = minerCount.ToString();
     }
-    public void GoldPerMin_Txt(float miningGoldAmount)//
+    public void GoldPerMin_Txt(float miningGoldAmount)
     {
         Txt_GoldPerMin.text = string.Format($"{miningGoldAmount:F1} /min");
     }
-    public void TowerAmount_Txt(int currentTowerAmount)//
+    public void TowerAmount_Txt(int currentTowerAmount)
     {
         Txt_TowerAmount.text = currentTowerAmount.ToString();
     }
-    public void EXP_Slider(float exp)//
+    public void EXP_Slider(float exp)
     {
         float getExp = exp * UpgradeData.EXPDropIncrese;
         currentEXP += getExp;
@@ -101,8 +102,9 @@ public class ViewStatistics : MonoBehaviour
         GetGold();
         score += getExp * enemyScaling;
         Score_Txt(score);
+        Debug.Log("EXP_Slider");
     }
-    public void TownHallHealth_Txt()//
+    public void TownHallHealth_Txt()
     {
         Txt_TownHallHealth.text = string.Format($"{UpgradeData.TownHallHealth:F0}");
     }

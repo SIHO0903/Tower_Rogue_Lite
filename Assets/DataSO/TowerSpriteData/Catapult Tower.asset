@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d442252dcf68f14f8f4c8636dd015ff, type: 3}
+  m_Name: Catapult Tower
+  m_EditorClassIdentifier: 
+  <Head_Lv1>k__BackingField: {fileID: -8076849466343192127, guid: d2df1de14b4b47b4f907c1d65d119435, type: 3}
+  <HeadPos_Lv1>k__BackingField: {x: 0, y: 0.035}
+  <HeadAnimator_Lv1>k__BackingField: {fileID: 22100000, guid: bb70841c8498ac543a4695b2a4e4b95d, type: 2}
+  <Body_Lv1>k__BackingField: {fileID: -876897327, guid: 215bbe85472891845b38164a7c609d53, type: 3}
+  <BodyPos_Lv1>k__BackingField: {x: 0, y: 0}
+  <Head_Lv2>k__BackingField: {fileID: -8333458946070669755, guid: 23de412707dc1db4fa781d646aadbb71, type: 3}
+  <HeadPos_Lv2>k__BackingField: {x: 0, y: 0.065}
+  <HeadAnimator_Lv2>k__BackingField: {fileID: 22100000, guid: 65206cacac4c2e7449f262f71fb4f5c9, type: 2}
+  <Body_Lv2>k__BackingField: {fileID: 76274880, guid: 215bbe85472891845b38164a7c609d53, type: 3}
+  <BodyPos_Lv2>k__BackingField: {x: 0, y: 0}
+  <Head_Lv3>k__BackingField: {fileID: 3229838089896032966, guid: 5995230f5e64b0c45a88d527413a5cfc, type: 3}
+  <HeadPos_Lv3>k__BackingField: {x: 0, y: 0.09}
+  <HeadAnimator_Lv3>k__BackingField: {fileID: 22100000, guid: 4bc113e54c072f9459ae645789fb3870, type: 2}
+  <Body_Lv3>k__BackingField: {fileID: 1421895825, guid: 215bbe85472891845b38164a7c609d53, type: 3}
+  <BodyPos_Lv3>k__BackingField: {x: 0, y: 0}

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SlingShot Tower_Lv2
+  m_Controller: {fileID: 9100000, guid: 4a8a1e408c1afd247a74b84ce492c999, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -1290312599729844301, guid: e711c3ee4ef2c4a478233226f2713b2a, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 9249efddd02bf9e45b9ae5294635f475, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 770c03a257a9a63439987f6468ce2d1f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b04567fb8ac19344fbd69f01ad51173f, type: 2}

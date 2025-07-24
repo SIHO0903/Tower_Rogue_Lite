@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SlingShot_Effect
+  m_Controller: {fileID: 9100000, guid: 718b59ed476ec2246b865b113a15f635, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a9ac68acd171f4847924282f63e501e1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3eb1cc326ff131f44849c79247aab873, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fd88fec48efa60543ae20592d691fd87, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 070b75eb9cda4cf4487a956aa858867a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6dbdd67a614fbb54fbb2cffb6b722ce6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5dbeda1e6e7c6ad4bb3f43af91e81383, type: 2}

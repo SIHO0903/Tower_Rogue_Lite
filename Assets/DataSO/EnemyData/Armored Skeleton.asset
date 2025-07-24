@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd57453a25843524b9bdf74a4772f191, type: 3}
+  m_Name: Armored Skeleton
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: 5
+  <UnitKorName>k__BackingField: "\uAC11\uC637\uC2A4\uCF08\uB808\uD1A4"
+  <UnitName>k__BackingField: Armored Skeleton
+  <Level>k__BackingField: 1
+  <Health>k__BackingField: 297
+  <Damage>k__BackingField: 13
+  <MoveSpeed>k__BackingField: 85
+  <AttackRange>k__BackingField: 1
+  <HealthGrowth>k__BackingField: 25
+  <AttackGrowth>k__BackingField: 2
+  <EXP>k__BackingField: 4

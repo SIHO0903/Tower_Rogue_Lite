@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d442252dcf68f14f8f4c8636dd015ff, type: 3}
+  m_Name: ArrowTower
+  m_EditorClassIdentifier: 
+  <Head_Lv1>k__BackingField: {fileID: 4348056178131268862, guid: e711c3ee4ef2c4a478233226f2713b2a, type: 3}
+  <HeadPos_Lv1>k__BackingField: {x: 0, y: 0.05}
+  <HeadAnimator_Lv1>k__BackingField: {fileID: 22100000, guid: d15f797cd39e40c4fa21f86f5ba43889, type: 2}
+  <Body_Lv1>k__BackingField: {fileID: -1837929478, guid: a95c949389fe17d4589e2942344aef2f, type: 3}
+  <BodyPos_Lv1>k__BackingField: {x: 0, y: 0}
+  <Head_Lv2>k__BackingField: {fileID: 8963812533384086122, guid: 2c6065c5d0739444ab88b72befd29de1, type: 3}
+  <HeadPos_Lv2>k__BackingField: {x: 0, y: 0.09}
+  <HeadAnimator_Lv2>k__BackingField: {fileID: 22100000, guid: 44be8ad071f56bb43a61f16c38e1b578, type: 2}
+  <Body_Lv2>k__BackingField: {fileID: 1462951438, guid: a95c949389fe17d4589e2942344aef2f, type: 3}
+  <BodyPos_Lv2>k__BackingField: {x: 0, y: 0}
+  <Head_Lv3>k__BackingField: {fileID: 1497566699206530637, guid: 8bc019c599ba8e24483cc4b074825b68, type: 3}
+  <HeadPos_Lv3>k__BackingField: {x: 0, y: 0.13}
+  <HeadAnimator_Lv3>k__BackingField: {fileID: 22100000, guid: 1c7b652da9d4b1947a68947255bbb9ef, type: 2}
+  <Body_Lv3>k__BackingField: {fileID: -520145224, guid: a95c949389fe17d4589e2942344aef2f, type: 3}
+  <BodyPos_Lv3>k__BackingField: {x: 0, y: 0}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Elite Orc
+  m_Controller: {fileID: 9100000, guid: 2ad389fedca07ef41937366d9f307f1a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9bb9cde0d96453642af3ee6ea095fc75, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cfef201908e41274087921452eda0821, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d8e425995ab3c934cbcd2cd2bd11719a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4f9b079b59e95b84f860891926c110dc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 09a59962da61f0f47a9dde06a74bb2b6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: aa3f5658c8173f9448fad24fa388b349, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7570c717550cb414c9faaf3de17b7dd8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c6a8a389851cc3648b12365058729e5b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 38a2cdfbe0b1632479f93bc0e69fa0b5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 874a8c16e09cedc4ea7508e6b3351997, type: 2}

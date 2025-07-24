@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d442252dcf68f14f8f4c8636dd015ff, type: 3}
+  m_Name: Electric Tower
+  m_EditorClassIdentifier: 
+  <Head_Lv1>k__BackingField: {fileID: 5322401731400122174, guid: fb8dc4357b5420743899790ae66e86f7, type: 3}
+  <HeadPos_Lv1>k__BackingField: {x: 0, y: 0.053}
+  <HeadAnimator_Lv1>k__BackingField: {fileID: 22100000, guid: ef97c9a2f46d241438ad854f3b23353c, type: 2}
+  <Body_Lv1>k__BackingField: {fileID: -142910443, guid: 1bfc46c52d7734442a93572cbcd8e029, type: 3}
+  <BodyPos_Lv1>k__BackingField: {x: 0, y: 0}
+  <Head_Lv2>k__BackingField: {fileID: -5372101117474220207, guid: 9ff658ca52795014a8ee2a5369f30ad7, type: 3}
+  <HeadPos_Lv2>k__BackingField: {x: 0, y: 0.086}
+  <HeadAnimator_Lv2>k__BackingField: {fileID: 22100000, guid: 6589737e67f66084a896f031d23a45ca, type: 2}
+  <Body_Lv2>k__BackingField: {fileID: 1368848740, guid: 1bfc46c52d7734442a93572cbcd8e029, type: 3}
+  <BodyPos_Lv2>k__BackingField: {x: 0, y: 0}
+  <Head_Lv3>k__BackingField: {fileID: 3053068937664588138, guid: 4c553e5b821f9ec4fa7e59c661d9d897, type: 3}
+  <HeadPos_Lv3>k__BackingField: {x: 0, y: 0.132}
+  <HeadAnimator_Lv3>k__BackingField: {fileID: 22100000, guid: 291bbd4f8144cb7459d409b4badf9042, type: 2}
+  <Body_Lv3>k__BackingField: {fileID: 1973449414, guid: 1bfc46c52d7734442a93572cbcd8e029, type: 3}
+  <BodyPos_Lv3>k__BackingField: {x: 0, y: 0}

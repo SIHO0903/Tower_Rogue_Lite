@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Electric_Effect
+  m_Controller: {fileID: 9100000, guid: 718b59ed476ec2246b865b113a15f635, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fd88fec48efa60543ae20592d691fd87, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ddb3ea49cbf863742a734ed0ac7233b6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a9ac68acd171f4847924282f63e501e1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 20702068d73146d4ab2966046704e513, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6dbdd67a614fbb54fbb2cffb6b722ce6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a634ab9663bea3645b5523a7b2ff1445, type: 2}

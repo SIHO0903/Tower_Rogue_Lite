@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d442252dcf68f14f8f4c8636dd015ff, type: 3}
+  m_Name: Explode Tower
+  m_EditorClassIdentifier: 
+  <Head_Lv1>k__BackingField: {fileID: -724839837299861856, guid: c91e5ad3a7090b54e8857f04e54e07a3, type: 3}
+  <HeadPos_Lv1>k__BackingField: {x: 0, y: -0.149}
+  <HeadAnimator_Lv1>k__BackingField: {fileID: 22100000, guid: 71bffc620533d0d4e90df6622d1650d7, type: 2}
+  <Body_Lv1>k__BackingField: {fileID: -1559300309, guid: 0d40e5d2f7572e34b8764bd41cb696c3, type: 3}
+  <BodyPos_Lv1>k__BackingField: {x: 0, y: 0}
+  <Head_Lv2>k__BackingField: {fileID: 5802717287466871632, guid: 14c4a2df854c8294ba5149217187bf3d, type: 3}
+  <HeadPos_Lv2>k__BackingField: {x: 0, y: -0.11}
+  <HeadAnimator_Lv2>k__BackingField: {fileID: 22100000, guid: fa797ffe2acefef40b7012153f32e95b, type: 2}
+  <Body_Lv2>k__BackingField: {fileID: 1005934426, guid: 0d40e5d2f7572e34b8764bd41cb696c3, type: 3}
+  <BodyPos_Lv2>k__BackingField: {x: 0, y: 0}
+  <Head_Lv3>k__BackingField: {fileID: -3854472154030501123, guid: 09647a0e8db11b64da30d6a34ce8bdb7, type: 3}
+  <HeadPos_Lv3>k__BackingField: {x: 0, y: -0.072}
+  <HeadAnimator_Lv3>k__BackingField: {fileID: 22100000, guid: 820814c8c82f1774f8bffbc9f45fb8ad, type: 2}
+  <Body_Lv3>k__BackingField: {fileID: 172709942, guid: 0d40e5d2f7572e34b8764bd41cb696c3, type: 3}
+  <BodyPos_Lv3>k__BackingField: {x: 0, y: 0}

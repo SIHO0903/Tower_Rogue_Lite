@@ -114,11 +114,6 @@ public abstract class AttackTower : BaseTower
             AttackMethod(component, target);
         }
     }
-    public abstract void AttackMethod(FriendlyProjectile component, GameObject target);
-
-
-    void Update() => AttackTimer();
-
     void SearchNearestTarget()
     {
         if (currentTarget != null && currentTarget.activeSelf)
@@ -130,11 +125,9 @@ public abstract class AttackTower : BaseTower
                 return;
             }
         }
-
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, current_Range, LayerMask.GetMask("Enemy"));
         if (targets.Length > 0)
         {
-            // 가장 가까운 적 찾기
             float minDistance = float.MaxValue;
             GameObject nearest = null;
 
@@ -147,12 +140,10 @@ public abstract class AttackTower : BaseTower
                     nearest = target.gameObject;
                 }
             }
-
             if (nearest != null)
             {
                 currentTarget = nearest;
                 Attack(currentTarget);
-
             }
         }
     }
@@ -172,4 +163,7 @@ public abstract class AttackTower : BaseTower
         sb.AppendLine($"사거리 : {TowerData.Range}");
         return sb.ToString();
     }
+
+    public abstract void AttackMethod(FriendlyProjectile component, GameObject target);
+    void Update() => AttackTimer();
 }

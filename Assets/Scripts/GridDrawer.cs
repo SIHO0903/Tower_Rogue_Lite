@@ -47,9 +47,6 @@ public class GridDrawer : MonoBehaviour
             levelGrid[snapPos] += lvl;
             UpdateTileGridTxt(snapPos);
         }
-
-
-
     }
 
     string Sign(int lvl)
@@ -71,7 +68,7 @@ public class GridDrawer : MonoBehaviour
 
         tiles[gridTxtInfo.pos].text = txt;
     }
-    public void RemoveTownHallGridTxt()
+    public void WriteGridTxt()
     {
         foreach (var item in tiles)
         {
@@ -86,12 +83,12 @@ public class GridDrawer : MonoBehaviour
         tiles[townhallPos].text = string.Empty;
 
     }
-    public void UpdateTileGridTxt(Vector2 oldPos)
+    public void UpdateTileGridTxt(Vector2 pos)
     {
-        if (levelGrid[oldPos] == 0)
-            tiles[oldPos].text = string.Empty;
+        if (levelGrid[pos] == 0)
+            tiles[pos].text = string.Empty;
         else
-            tiles[oldPos].text = Sign(levelGrid[oldPos]);
+            tiles[pos].text = Sign(levelGrid[pos]);
     }
     public void ResetLevelGrid()
     {
@@ -101,7 +98,7 @@ public class GridDrawer : MonoBehaviour
             levelGrid[key] = 0;
         }
 
-        RemoveTownHallGridTxt();
+        WriteGridTxt();
         
     }
 }

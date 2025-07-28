@@ -44,11 +44,8 @@ public class PoolManager : Singleton<PoolManager>
             for (int i = 0; i < poolData.pools.Length; i++)
             {
                 poolData.poolNames.Add(poolData.prefabs[i].name, i);
-
             }
-
         }
-
     }
     public GameObject Get(PoolEnum prefabType, string name, Vector3 startPos, Quaternion rot, Transform parent = null)
     {

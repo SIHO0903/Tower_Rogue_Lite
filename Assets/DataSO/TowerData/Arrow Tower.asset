@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Arrow Tower
   m_EditorClassIdentifier: 
   <KorName>k__BackingField: "\uD654\uC0B4 \uD0C0\uC6CC"
-  <Level>k__BackingField: 1
   <MaxLevel>k__BackingField: 9
   <Damage>k__BackingField: 7
-  <AttackSpeed>k__BackingField: 1
+  <AttackSpeed>k__BackingField: 0.9
   <Range>k__BackingField: 3
   <ProjectileSpeed>k__BackingField: 5
   <Growth_Damage>k__BackingField: 3

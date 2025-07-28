@@ -15,8 +15,8 @@ MonoBehaviour:
   <KorName>k__BackingField: "\uD22C\uC11D\uAE30 \uD0C0\uC6CC"
   <MaxLevel>k__BackingField: 9
   <Damage>k__BackingField: 13
-  <AttackSpeed>k__BackingField: 2
-  <Range>k__BackingField: 6
+  <AttackSpeed>k__BackingField: 1.9
+  <Range>k__BackingField: 5
   <ProjectileSpeed>k__BackingField: 5
   <Growth_Damage>k__BackingField: 3
   <Growth_AttackSpeed>k__BackingField: 0

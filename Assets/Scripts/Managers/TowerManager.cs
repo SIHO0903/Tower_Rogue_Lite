@@ -38,21 +38,6 @@ public class TowerManager : MonoBehaviour
         tileGrid[new Vector2(-2.5f, 0f)] = townHall;
     }
 
-    void HandleTowerSelectionAndMove()
-    {
-        if (Input.GetMouseButtonDown(0))
-            TrySelectTower();
-
-        if (Input.GetMouseButton(0))
-            MoveGhostObject();
-
-        if (Input.GetMouseButtonUp(0))
-            PlaceSelectedTower();
-    }
-    public void Update()
-    {
-        HandleTowerSelectionAndMove();
-    }
     void TrySelectTower()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -83,23 +68,24 @@ public class TowerManager : MonoBehaviour
 
             Vector3 targetPos = ClampTilePosition(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             Vector3 oldPos = Constants.SnapToGrid(selectedTower.transform.position);
-            
+
             if (oldPos == targetPos)
             {
-                ghostObj.SetActive(false);
-                ghostObj = null;
-                selectedTower = null;
+                ClearGhost();
                 return;
             }
             UpdateTileGrid(oldPos, targetPos, selectedTower.gameObject);
             UpdateTowerGridTxt();
             gridDrawer.UpdateTileGridTxt(oldPos);
-            ghostObj.SetActive(false);
-            ghostObj = null;
-            selectedTower = null;
+            ClearGhost();
         }
+    }
 
-
+    private void ClearGhost()
+    {
+        ghostObj.SetActive(false);
+        ghostObj = null;
+        selectedTower = null;
     }
 
     public void OnTowerPlaced(GameObject towerObj, Vector2 pos)
@@ -114,34 +100,6 @@ public class TowerManager : MonoBehaviour
             attackTower.LevelChanged(gridDrawer.levelGrid[pos]);
             gridDrawer.UpdateAttackTowerGridTxt(attackTower.gridTxtInfo);
         }
-    }
-    GameObject CreateGhostObj(Vector2 cursorPos, TowerInfo info)
-    {
-        GameObject ghost = PoolManager.Instance.Get(PoolEnum.Etc, "GhostObj", cursorPos, Quaternion.identity);
-
-        SpriteRenderer[] sprites = ghost.GetComponentsInChildren<SpriteRenderer>();
-        sprites[0].sprite = info.headSprite;
-        sprites[1].sprite = info.bodySprite;
-
-        ghost.transform.GetChild(0).position = info.headTransform.position;
-        ghost.transform.GetChild(1).position = info.bodyTransform.position;
-
-        Color headColor = sprites[0].color;
-        headColor.a = 0.5f;
-        sprites[0].color = headColor;
-
-        Color bodyColor = sprites[1].color;
-        bodyColor.a = 0.5f;
-        sprites[1].color = bodyColor;
-
-        return ghost;
-    }
-    public Vector3 ClampTilePosition(Vector3 pos)
-    {
-        Vector2 gridOrigin = new Vector2(-3.8f, 1.3f);
-        float x = Mathf.Round((Mathf.Clamp(pos.x,-3.8f,-1.2f) - gridOrigin.x) / Constants.TileGap) * Constants.TileGap + gridOrigin.x;
-        float y = Mathf.Round((Mathf.Clamp(pos.y,-1.3f,1.3f) - gridOrigin.y) / Constants.TileGap) * Constants.TileGap + gridOrigin.y;
-        return Constants.SnapToGrid(new Vector3(x, y));
     }
     public void UpdateTileGrid(Vector2 oldPos, Vector2 newPos, GameObject towerObj)
     {
@@ -159,9 +117,7 @@ public class TowerManager : MonoBehaviour
         }
         else
         {
-            if (newPos == TownHall.Position)
-                return;
-
+            if (newPos == TownHall.Position) return;
             var otherTower = tileGrid[newPos];
             otherTower.transform.position = oldPos;
             towerObj.transform.position = newPos;
@@ -195,5 +151,49 @@ public class TowerManager : MonoBehaviour
             }
 
         } 
+    }
+    void HandleTowerSelectionAndMove()
+    {
+        if (Input.GetMouseButtonDown(0))
+            TrySelectTower();
+
+        if (Input.GetMouseButton(0))
+            MoveGhostObject();
+
+        if (Input.GetMouseButtonUp(0))
+            PlaceSelectedTower();
+    }
+    public void Update()
+    {
+        HandleTowerSelectionAndMove();
+    }
+
+    GameObject CreateGhostObj(Vector2 cursorPos, TowerInfo info)
+    {
+        GameObject ghost = PoolManager.Instance.Get(PoolEnum.Etc, "GhostObj", cursorPos, Quaternion.identity);
+
+        SpriteRenderer[] sprites = ghost.GetComponentsInChildren<SpriteRenderer>();
+        sprites[0].sprite = info.headSprite;
+        sprites[1].sprite = info.bodySprite;
+
+        ghost.transform.GetChild(0).position = info.headTransform.position;
+        ghost.transform.GetChild(1).position = info.bodyTransform.position;
+
+        Color headColor = sprites[0].color;
+        headColor.a = 0.5f;
+        sprites[0].color = headColor;
+
+        Color bodyColor = sprites[1].color;
+        bodyColor.a = 0.5f;
+        sprites[1].color = bodyColor;
+
+        return ghost;
+    }
+    public Vector3 ClampTilePosition(Vector3 pos)
+    {
+        Vector2 gridOrigin = new Vector2(-3.8f, 1.3f);
+        float x = Mathf.Round((Mathf.Clamp(pos.x, -3.8f, -1.2f) - gridOrigin.x) / Constants.TileGap) * Constants.TileGap + gridOrigin.x;
+        float y = Mathf.Round((Mathf.Clamp(pos.y, -1.3f, 1.3f) - gridOrigin.y) / Constants.TileGap) * Constants.TileGap + gridOrigin.y;
+        return Constants.SnapToGrid(new Vector3(x, y));
     }
 }

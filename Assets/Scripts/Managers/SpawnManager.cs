@@ -31,10 +31,7 @@ public class SpawnManager : MonoBehaviour
         }
         EnemyAmount = 0;
     }
-    void ResetTimer()
-    {
-        levelTimer = 0;
-    }
+
 
     void Update()
     {
@@ -42,7 +39,6 @@ public class SpawnManager : MonoBehaviour
         SpawnTimer();
 
     }
-
     void SpawnTimer()
     {
         timer += Time.deltaTime;
@@ -60,8 +56,8 @@ public class SpawnManager : MonoBehaviour
 
         Vector3 spawnPos = GetSpawnPosition();
 
-        GameObject enemy = PoolManager.Instance.Get(PoolEnum.Enemy, index, spawnPos, Quaternion.identity, transform);
-        UnitState<MeleeEnemy> unit = enemy.GetComponent<UnitState<MeleeEnemy>>();
+        GameObject enemy = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos, Quaternion.identity, transform);
+        BaseUnit unit = enemy.GetComponent<BaseUnit>();
         unit.Die = Die;
         unit.Init(LevelChange(levelTimer));
         EnemyAmount += 1;
@@ -99,6 +95,10 @@ public class SpawnManager : MonoBehaviour
     void DecreaseEnemyAmount(float amount)
     {
         EnemyAmount -= 1;
+    }
+    void ResetTimer()
+    {
+        levelTimer = 0;
     }
     void TEMPSpawnEnemy()
     {

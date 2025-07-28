@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,10 +14,8 @@ public enum EUnit
     Die,
 }
 
-
-
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
-public class UnitState<T> : MonoBehaviour
+public class UnitState<T> : BaseUnit
 {
 
     protected IState<T> currentState;
@@ -34,7 +31,6 @@ public class UnitState<T> : MonoBehaviour
 
     public Vector3 townHallPos;
     SpriteRenderer spriteRenderer;
-    public Action<float> Die;
     public virtual void Awake()
     {
         Animator = GetComponent<Animator>();
@@ -48,11 +44,9 @@ public class UnitState<T> : MonoBehaviour
     {
         Init(1);
     }
-    public virtual void OnEnable()
-    {
-        Debug.Log("UnitState : " + townHallPos);
-    }
-    public void Init(int currentLevel)
+    public virtual void OnEnable() { }
+
+    public override void Init(int currentLevel)
     {
         LevelChange(currentLevel);
         CircleCollider.enabled = true;
@@ -64,7 +58,7 @@ public class UnitState<T> : MonoBehaviour
         Health = UnitData.Health + currentLevel * UnitData.HealthGrowth;
         Damage = UnitData.Damage + currentLevel * UnitData.AttackGrowth;
     }
-    public void TransitionToState(EUnit estate)
+    public override void TransitionToState(EUnit estate)
     {
         currentState = states[estate];
         currentState.EnterState();
@@ -91,7 +85,7 @@ public class UnitState<T> : MonoBehaviour
             TransitionToState(EUnit.GetHit);
         }
     }
-    public void GetHit(float damage,Color damageFontColor)
+    public override void GetHit(float damage,Color damageFontColor)
     {
         if (damage == 0) return;
         Health -= damage;

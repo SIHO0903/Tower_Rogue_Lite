@@ -25,7 +25,7 @@ public class ProjectileEffect : MonoBehaviour
 
         foreach (var item in target)
         {
-            var enemy = item.GetComponent<UnitState<MeleeEnemy>>();
+            var enemy = item.GetComponent<BaseUnit>();
             enemy.GetHit(damage,Color.yellow);
             enemy.TransitionToState(EUnit.GetHit);
         }

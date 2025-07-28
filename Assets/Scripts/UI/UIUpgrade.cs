@@ -35,7 +35,7 @@ public class UIUpgrade : MonoBehaviour
     }
     void TowerAtckSpd()
     {
-        UpgradeData.TowerAttackSpeed += 0.1f;
+        UpgradeData.TowerAttackSpeed -= 0.1f;
         towerManager.UpgradeAllAttackTower();
     }
     void TownHallHealth()
@@ -58,8 +58,8 @@ public class UIUpgrade : MonoBehaviour
     {
         CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
         UpgradeData.TowerAttackDamage = upgradeData.level[0] * 1;
-        UpgradeData.TowerAttackSpeed = upgradeData.level[1] * 0.1f;
-        UpgradeData.TownHallHealth = upgradeData.level[4] * 50;
+        UpgradeData.TowerAttackSpeed = -upgradeData.level[1] * 0.1f;
+        UpgradeData.TownHallHealth = upgradeData.level[4] * 50 + 50;
         UpgradeData.LevelChoice = upgradeData.level[5] * 1 + 3;
         UpgradeData.RerollCount = upgradeData.level[6] * 1;
         UpgradeData.EXPDropIncrese = upgradeData.level[7] * 0.1f + 1f;

@@ -102,7 +102,6 @@ public class ViewStatistics : MonoBehaviour
         GetGold();
         score += getExp * enemyScaling;
         Score_Txt(score);
-        Debug.Log("EXP_Slider");
     }
     public void TownHallHealth_Txt()
     {
@@ -114,7 +113,6 @@ public class ViewStatistics : MonoBehaviour
     }
     void GetGold()
     {
-        Debug.Log("GetGold");
         if(Random.value <= 0.1f)
         {
             MinerManager.Gold += 3;
@@ -130,6 +128,8 @@ public class ViewStatistics : MonoBehaviour
         TownHallHealth_Txt();
 
         EnemyKillCount_Txt(0);
+
+        Slider_EXP.value = currentEXP / totalEXP;
     }
 
 }

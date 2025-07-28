@@ -2,28 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
-//가로,세로,십자, 주변다, 대각선
+
 public class SynergyTower : BaseTower
 {
     TowerManager towerManager;
 
     [Header("시너지위치")]
     [HideInInspector] public SynergyEnum[] SynergyPos;
-
-
     [SerializeField] public SynergyPosition[] SynergyPositions;
 
     void OnEnable() => towerManager = GetComponentInParent<TowerManager>();
-    public List<Vector2> GetAllSynergyPositions(Vector3 oldPos)
-    {
-        List<Vector2> vectors = new List<Vector2>();
-        foreach (var item in SynergyPositions)
-        {
-            vectors.Add(CalculateSynergyPosition(item, oldPos));
-        }
-        return vectors;
-    }
-
     public void RemoveSynergy(Vector2 oldPos)
     {
         foreach (var item in SynergyPositions)

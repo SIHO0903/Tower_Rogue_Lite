@@ -48,7 +48,6 @@ public static class Constants
         float y = Mathf.Round(v.y * 100f) / 100f;
         return new Vector2(x, y);
     }
-    //Json 저장 불러오기
     public static void JsonSave<T>(T data, JsonFileName fileName)
     {
         Debug.Log(data);

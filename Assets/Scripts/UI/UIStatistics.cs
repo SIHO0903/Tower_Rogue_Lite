@@ -7,7 +7,7 @@ public class UIStatistics : MonoBehaviour
 {
     [Header("Model")]
     [SerializeField] SpawnManager spawnManager;
-    [SerializeField] SelectManager selectManager;
+    [SerializeField] UISelect selectManager;
     [SerializeField] MinerManager minerManager;
     [Header("View")]
     [SerializeField] ViewStatistics view;
@@ -20,7 +20,7 @@ public class UIStatistics : MonoBehaviour
         view.LevelUP += selectManager.GetRandomSelect;
         spawnManager.EnemyLevel += view.EnemyLevel_Txt;
         view.EnemySpawnSpeed_Txt(spawnManager.spawnTimer);
-        selectManager.TowerInstalled += () =>
+        selectManager.TowerAmount += () =>
         {
             towerCount++;
             view.TowerAmount_Txt(towerCount);

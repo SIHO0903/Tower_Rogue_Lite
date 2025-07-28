@@ -47,17 +47,6 @@ public class MinerManager : MonoBehaviour
             OnGoldUpdate?.Invoke();
         }
     }
-
-    public void AddMiner()
-    {
-        MinerAmount += 1;
-        OnGoldUpdate?.Invoke();
-    }
-    public void IncreaseMinerSpeed()
-    {
-        miningSpeed += 0.016f;
-        OnGoldUpdate?.Invoke();
-    }
     void MiningPerSecond()
     {
         Gold += MinerAmount * miningSpeed;
@@ -79,5 +68,15 @@ public class MinerManager : MonoBehaviour
 
             return true;
         }
+    }
+    public void AddMiner()
+    {
+        MinerAmount += 1;
+        OnGoldUpdate?.Invoke();
+    }
+    public void IncreaseMinerSpeed()
+    {
+        miningSpeed += 0.016f;
+        OnGoldUpdate?.Invoke();
     }
 }

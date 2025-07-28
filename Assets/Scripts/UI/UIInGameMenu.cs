@@ -18,6 +18,7 @@ public class UIInGameMenu : MonoBehaviour
             Time.timeScale = 1f;
             gameEnd.gameObject.SetActive(false);
             ReStart?.Invoke();
+            PoolManager.Instance.DeactivateAllChildren();
             SoundManager.instance.PlaySound(SoundType.Button);
         });
         gameStart.Start.onClick.AddListener(() =>

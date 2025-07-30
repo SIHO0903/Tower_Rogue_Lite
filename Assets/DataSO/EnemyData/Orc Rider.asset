@@ -16,9 +16,9 @@ MonoBehaviour:
   <UnitKorName>k__BackingField: "\uC624\uD06C\uB77C\uC774\uB354"
   <UnitName>k__BackingField: Orc Rider
   <Level>k__BackingField: 1
-  <Health>k__BackingField: 700
+  <Health>k__BackingField: 560
   <Damage>k__BackingField: 30
-  <MoveSpeed>k__BackingField: 120
+  <MoveSpeed>k__BackingField: 135
   <AttackRange>k__BackingField: 1
   <HealthGrowth>k__BackingField: 50
   <AttackGrowth>k__BackingField: 3

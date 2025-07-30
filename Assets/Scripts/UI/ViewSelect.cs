@@ -64,6 +64,7 @@ public class ViewSelect : MonoBehaviour
     {
         this.currentLevel = currentLevel;
         ShowReRollBtn();
+        //3의 배수의 레벨마다 시너지 타워선택UI 활성화
         bool isSynergyLevel = currentLevel % 3 == 0;
 
         Button[] targetButtons = isSynergyLevel ? SynergyTowerSelects : AttackTowerSelects;
@@ -84,6 +85,14 @@ public class ViewSelect : MonoBehaviour
             unique.Add(Random.Range(min, max));
         return unique;
     }
+
+    void ShowReRollBtn()
+    {
+        currentReRollCount = UpgradeData.RerollCount;
+        reRollTxt.text = $"리롤 ({currentReRollCount}회 가능)";
+        reRollBtn.gameObject.SetActive(true);
+        reRollBtn.interactable = currentReRollCount == 0 ? false : true;
+    }
     void InitReRollBtn()
     {
         reRollTxt = reRollBtn.GetComponentInChildren<TMP_Text>();
@@ -97,12 +106,5 @@ public class ViewSelect : MonoBehaviour
         });
 
         reRollBtn.gameObject.SetActive(false);
-    }
-    void ShowReRollBtn()
-    {
-        currentReRollCount = UpgradeData.RerollCount;
-        reRollTxt.text = $"리롤 ({currentReRollCount}회 가능)";
-        reRollBtn.gameObject.SetActive(true);
-        reRollBtn.interactable = currentReRollCount == 0 ? false : true;
     }
 }

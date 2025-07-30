@@ -14,23 +14,23 @@ public class MinerManager : MonoBehaviour
     void Awake()
     {
         LoadMinerStatus();
-        GoldSaveData goldData = Constants.JsonLoad<GoldSaveData>(Constants.JsonFileName.Gold);
+        GoldSaveData goldData = JsonDataManager.JsonLoad<GoldSaveData>(JsonDataManager.JsonFileName.Gold);
         if (goldData == null)
         {
             goldData = new GoldSaveData();
-            Constants.JsonSave(goldData, Constants.JsonFileName.Gold);
+            JsonDataManager.JsonSave(goldData, JsonDataManager.JsonFileName.Gold);
         }
         Gold = goldData.gold;
     }
 
     void LoadMinerStatus()
     {
-        CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
+        CurrentUpgradeLvl upgradeData = JsonDataManager.JsonLoad<CurrentUpgradeLvl>(JsonDataManager.JsonFileName.Upgrade);
         if (upgradeData == null)
         {
             upgradeData = new CurrentUpgradeLvl();
             upgradeData.Init();
-            Constants.JsonSave(upgradeData, Constants.JsonFileName.Upgrade);
+            JsonDataManager.JsonSave(upgradeData, JsonDataManager.JsonFileName.Upgrade);
         }
         MinerAmount = upgradeData.level[2];
         miningSpeed = upgradeData.level[3] * 0.016f;
@@ -55,7 +55,7 @@ public class MinerManager : MonoBehaviour
 
     public float MiningPerMinute()
     {
-        Debug.Log("MiningPerMinute : " + Mathf.Round(MinerAmount * miningSpeed * 60 * 10) / 10);
+        //Debug.Log("MiningPerMinute : " + Mathf.Round(MinerAmount * miningSpeed * 60 * 10) / 10);
         return Mathf.Round(MinerAmount * miningSpeed * 60 * 10) / 10;
     }
     public static bool CanPayGold(float amount)

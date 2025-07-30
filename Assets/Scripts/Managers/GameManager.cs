@@ -20,7 +20,7 @@ public class GameManager : Singleton<GameManager>
         PopUpEnd?.Invoke();
         GoldSaveData goldSaveData = new GoldSaveData();
         goldSaveData.gold = MinerManager.Gold;
-        Constants.JsonSave<GoldSaveData>(goldSaveData, Constants.JsonFileName.Gold);
+        JsonDataManager.JsonSave<GoldSaveData>(goldSaveData, JsonDataManager.JsonFileName.Gold);
         Debug.Log("게임종료");
 
     }

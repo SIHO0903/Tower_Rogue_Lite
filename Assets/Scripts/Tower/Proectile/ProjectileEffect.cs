@@ -15,7 +15,7 @@ public class ProjectileEffect : MonoBehaviour
     {
 
         timer = 0.5f;
-        StartCoroutine(Constants.SetActiveFalse(gameObject, timer));
+        StartCoroutine(CoroutineUtility.SetActiveFalse(gameObject, timer));
     }
     public void AOE(int current_tier,string effectName)
     {

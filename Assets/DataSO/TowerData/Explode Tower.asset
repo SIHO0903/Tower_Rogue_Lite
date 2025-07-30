@@ -16,7 +16,7 @@ MonoBehaviour:
   <MaxLevel>k__BackingField: 9
   <Damage>k__BackingField: 18
   <AttackSpeed>k__BackingField: 2.4
-  <Range>k__BackingField: 2
+  <Range>k__BackingField: 3
   <ProjectileSpeed>k__BackingField: 5
   <Growth_Damage>k__BackingField: 3
   <Growth_AttackSpeed>k__BackingField: 0

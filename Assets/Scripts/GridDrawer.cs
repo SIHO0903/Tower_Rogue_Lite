@@ -28,7 +28,7 @@ public class GridDrawer : MonoBehaviour
         for (int y = 0; y < height; y++)
             for (int x = 0; x < width; x++)
             {
-                Vector2 pos = tilePos + new Vector2(x * Constants.TileGap, y * Constants.TileGap);
+                Vector2 pos = tilePos + new Vector2(x * GridUtility.TileGap, y * GridUtility.TileGap);
                 var tile = Instantiate(tile_Prefab, pos, Quaternion.identity, transform);
                 tile.name = $"Tile[{x},{y}]";
                 tiles[pos] = tile.GetComponentInChildren<TMP_Text>();
@@ -40,7 +40,7 @@ public class GridDrawer : MonoBehaviour
 
     public void UpdateSynergyGridTxt(Vector2 pos, int lvl)
     {
-        Vector2 snapPos = Constants.SnapToGrid(pos);
+        Vector2 snapPos = GridUtility.SnapToGrid(pos);
 
         if (levelGrid.TryGetValue(snapPos, out int value))
         {

@@ -18,7 +18,7 @@ MonoBehaviour:
   <Level>k__BackingField: 1
   <Health>k__BackingField: 297
   <Damage>k__BackingField: 13
-  <MoveSpeed>k__BackingField: 85
+  <MoveSpeed>k__BackingField: 100
   <AttackRange>k__BackingField: 1
   <HealthGrowth>k__BackingField: 25
   <AttackGrowth>k__BackingField: 2

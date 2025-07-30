@@ -9037,7 +9037,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerManager: {fileID: 1067998608}
-  gridDrawer: {fileID: 252028192}
   viewSelect: {fileID: 1613587742}
 --- !u!1 &420451643
 GameObject:

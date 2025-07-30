@@ -6,22 +6,22 @@ public class SpawnManager : MonoBehaviour
 {
 
     int[] spawnPoints;
-    public float spawnTimer;
+    [HideInInspector]public float spawnTimer;
     float timer;
     float levelTimer;
     public Action<float> Die;
     public Action<float> EnemyLevel;
     public int EnemyAmount { get; set; }
+
+    bool isReduced_180 = false;
+    bool isReduced_300 = false;
+    bool isReduced_480 = false;
     private void Awake()
     {
         spawnPoints = new int[4] { -10, 5, -6, 6 };
         Die += DecreaseEnemyAmount;
         UIInGameMenu.ReStart += ClearEnemy;
         UIInGameMenu.ReStart += ResetTimer;
-    }
-    private void Start()
-    {
-        //TEMPSpawnEnemy();
     }
     void ClearEnemy()
     {
@@ -46,6 +46,7 @@ public class SpawnManager : MonoBehaviour
         {
             SpawnEnemy();
             timer = 0;
+            DecreaseSpawnTimer();
         }
     }
 
@@ -56,7 +57,7 @@ public class SpawnManager : MonoBehaviour
 
         Vector3 spawnPos = GetSpawnPosition();
 
-        GameObject enemy = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos, Quaternion.identity, transform);
+        GameObject enemy = PoolManager.Instance.Get(PoolEnum.Enemy, index, spawnPos, Quaternion.identity, transform);
         BaseUnit unit = enemy.GetComponent<BaseUnit>();
         unit.Die = Die;
         unit.Init(LevelChange(levelTimer));
@@ -86,6 +87,7 @@ public class SpawnManager : MonoBehaviour
     {
         return Mathf.Clamp((int)(levelTimer / 30f), 0, 10);
     }
+
     int LevelChange(float timer)
     {
         int level = Mathf.FloorToInt((timer + 60) / 60);
@@ -99,33 +101,25 @@ public class SpawnManager : MonoBehaviour
     void ResetTimer()
     {
         levelTimer = 0;
+        spawnTimer = 4f;
     }
-    void TEMPSpawnEnemy()
+    void DecreaseSpawnTimer()
     {
-        Vector2 spawnPos1 = new Vector2(-1.3f, 3f);
-        GameObject enemy1 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos1, Quaternion.identity, transform);
-                                                                     
-        //Vector2 spawnPos2 = new Vector2(-1f, 3f);                    
-        //GameObject enemy2 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos2, Quaternion.identity, transform);
-                                                                     
-        //Vector2 spawnPos3 = new Vector2(-0.7f, 3f);                  
-        //GameObject enemy3 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos3, Quaternion.identity, transform);
-                                                                     
-        //Vector2 spawnPos4 = new Vector2(-1.3f, 2.7f);                
-        //GameObject enemy4 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos4, Quaternion.identity, transform);
-                                                                     
-        //Vector2 spawnPos5 = new Vector2(-1f, 2.7f);                  
-        //GameObject enemy5 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos5, Quaternion.identity, transform);
-                                                                     
-        //Vector2 spawnPos6 = new Vector2(-0.7f, 2.7f);                
-        //GameObject enemy6 = PoolManager.Instance.Get(PoolEnum.Enemy, 5, spawnPos6, Quaternion.identity, transform);
-
-        enemy1.GetComponent<UnitState<RangeEnemy>>().Die = Die;
-        //enemy2.GetComponent<UnitState<MeleeEnemy>>().Die = Die;
-        //enemy3.GetComponent<UnitState<MeleeEnemy>>().Die = Die;
-        //enemy4.GetComponent<UnitState<MeleeEnemy>>().Die = Die;
-        //enemy5.GetComponent<UnitState<MeleeEnemy>>().Die = Die;
-        //enemy6.GetComponent<UnitState<MeleeEnemy>>().Die = Die;
-
+        if (!isReduced_180 && levelTimer >= 180f)
+        {
+            spawnTimer -= 0.5f;
+            isReduced_180 = true;
+        }
+        if (!isReduced_300 && levelTimer >= 300f)
+        {
+            spawnTimer -= 0.5f;
+            isReduced_300 = true;
+        }
+        if (!isReduced_480 && levelTimer >= 480f)
+        {
+            spawnTimer -=  0.5f;
+            isReduced_480 = true;
+        }
     }
+    
 }

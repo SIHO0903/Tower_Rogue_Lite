@@ -2,7 +2,7 @@
 
 public class AttackState<T> : BaseState<T> where T : UnitState<T>
 {
-    float timer;
+    float timer=0;
     bool hasAttacked;
     bool animationStarted;
     IAttack attackType;
@@ -13,7 +13,6 @@ public class AttackState<T> : BaseState<T> where T : UnitState<T>
 
     public override void EnterState()
     {
-        timer = 0;
         hasAttacked = false;
         animationStarted = false;
     }
@@ -25,19 +24,20 @@ public class AttackState<T> : BaseState<T> where T : UnitState<T>
         if (!animationStarted)
         {
             owner.Rigid.velocity = Vector2.zero;
-            owner.Animator.SetTrigger("Attack");
-            SoundManager.instance.PlaySound(SoundType.EnemyAttack);
+
             animationStarted = true;
         }
 
-        if (!hasAttacked && timer >= 0.8f)
+        //공격속도
+        if (!hasAttacked && timer >= 1f)
         {
-            //GameManager.Instance.DescreaseHealth(owner.Damage);
+            owner.Animator.SetTrigger("Attack");
+            SoundManager.instance.PlaySound(SoundType.EnemyAttack);
             attackType.Attack(owner.Damage,owner.transform.position,owner.Dir());
             hasAttacked = true;
             timer = 0;
             hasAttacked = false;
-            animationStarted = false;
+            //animationStarted = false;
         }
     }
 }

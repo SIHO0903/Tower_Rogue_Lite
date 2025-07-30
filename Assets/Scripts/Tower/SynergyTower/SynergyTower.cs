@@ -26,7 +26,7 @@ public class SynergyTower : BaseTower
     Vector2 CalculateSynergyPosition(SynergyPosition item, Vector3? customPos = null)
     {
         Vector2 basePos = customPos ?? transform.position;
-        Vector2 offset = Constants.EnumToVector3(item.dir) * Constants.TileGap * item.Distance;
+        Vector2 offset = GridUtility.EnumToVector3(item.dir) * GridUtility.TileGap * item.Distance;
         return basePos + offset;
     }
 
@@ -54,7 +54,7 @@ public class SynergyTower : BaseTower
 
         foreach (var synergy in SynergyPositions)
         {
-            Vector2 dir = Constants.EnumToVector3(synergy.dir);
+            Vector2 dir = GridUtility.EnumToVector3(synergy.dir);
 
             int dx = Mathf.RoundToInt(dir.x * synergy.Distance);
             int dy = -Mathf.RoundToInt(dir.y * synergy.Distance);

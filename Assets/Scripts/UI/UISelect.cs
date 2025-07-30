@@ -10,8 +10,6 @@ public class UISelect : MonoBehaviour
 {
 
     [SerializeField] TowerManager towerManager;
-    [SerializeField] GridDrawer gridDrawer;
-
     [SerializeField] ViewSelect viewSelect;
     GameObject Choosed;
     public Action TowerAmount;
@@ -33,9 +31,7 @@ public class UISelect : MonoBehaviour
         UIInGameMenu.ReStart += ReStartReSelect;
 
     }
-
-
-    void HandleTowerPlacement()
+    void TowerPlacement()
     {
         if (Input.GetMouseButtonDown(0) && viewSelect.TowerObj != null)
         {
@@ -44,7 +40,7 @@ public class UISelect : MonoBehaviour
 
             if (hit.collider != null && hit.collider.CompareTag("TowerTile"))
             {
-                Vector2 pos = Constants.SnapToGrid(hit.collider.transform.position);
+                Vector2 pos = GridUtility.SnapToGrid(hit.collider.transform.position);
                 viewSelect.TowerObj.transform.position = pos;
                 towerManager.tileGrid[pos] = viewSelect.TowerObj;
                 viewSelect.TowerObj.SetActive(true);
@@ -52,31 +48,26 @@ public class UISelect : MonoBehaviour
                 towerManager.OnTowerPlaced(viewSelect.TowerObj, pos);
                 TowerAmount?.Invoke();
 
-                gridDrawer.gameObject.SetActive(false);
+                towerManager.gridDrawer.gameObject.SetActive(false);
                 viewSelect.TowerObj = null;
             }
         }
     }
-
     public void GetRandomSelect(int currentLevel)
     {
         viewSelect.SetActiveFalseAllSelects();
         viewSelect.RandomSelect(currentLevel);
-        gridDrawer.gameObject.SetActive(true);
+        towerManager.gridDrawer.gameObject.SetActive(true);
+    }
 
-    }
-    void ReStartReSelect()
-    {
-        GetRandomSelect(1);
-    }
 
     void Update()
     {
-        HandleTowerPlacement();
-        HandleTempUIControls();
+        TowerPlacement();
+        HandleUIControls();
 
     }
-    void HandleTempUIControls()
+    void HandleUIControls()
     {
         if (Input.GetKeyDown(KeyCode.Q))
             GetRandomSelect(1);
@@ -85,6 +76,10 @@ public class UISelect : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
             viewSelect.SetActiveFalseAllSelects();
         if (Input.GetKeyDown(KeyCode.Tab))
-            gridDrawer.gameObject.SetActive(!gridDrawer.gameObject.activeSelf);
+            towerManager.gridDrawer.gameObject.SetActive(!towerManager.gridDrawer.gameObject.activeSelf);
+    }
+    void ReStartReSelect()
+    {
+        GetRandomSelect(1);
     }
 }

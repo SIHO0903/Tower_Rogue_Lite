@@ -16,9 +16,9 @@ MonoBehaviour:
   <UnitKorName>k__BackingField: "\uB300\uAC80\uC2A4\uCF08\uB808\uD1A4"
   <UnitName>k__BackingField: Greatsword Skeleton
   <Level>k__BackingField: 1
-  <Health>k__BackingField: 6137
+  <Health>k__BackingField: 617
   <Damage>k__BackingField: 28
-  <MoveSpeed>k__BackingField: 60
+  <MoveSpeed>k__BackingField: 80
   <AttackRange>k__BackingField: 1
   <HealthGrowth>k__BackingField: 50
   <AttackGrowth>k__BackingField: 3

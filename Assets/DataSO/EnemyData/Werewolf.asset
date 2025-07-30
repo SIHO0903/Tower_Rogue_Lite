@@ -16,9 +16,9 @@ MonoBehaviour:
   <UnitKorName>k__BackingField: "\uC6E8\uC5B4\uC6B8\uD504"
   <UnitName>k__BackingField: Werewolf
   <Level>k__BackingField: 1
-  <Health>k__BackingField: 501
+  <Health>k__BackingField: 430
   <Damage>k__BackingField: 22
-  <MoveSpeed>k__BackingField: 95
+  <MoveSpeed>k__BackingField: 120
   <AttackRange>k__BackingField: 1
   <HealthGrowth>k__BackingField: 40
   <AttackGrowth>k__BackingField: 3

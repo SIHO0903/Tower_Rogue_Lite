@@ -16,9 +16,9 @@ MonoBehaviour:
   <UnitKorName>k__BackingField: "\uC6E8\uC5B4\uBCA0\uC5B4"
   <UnitName>k__BackingField: Werebear
   <Level>k__BackingField: 1
-  <Health>k__BackingField: 433
+  <Health>k__BackingField: 380
   <Damage>k__BackingField: 19
-  <MoveSpeed>k__BackingField: 90
+  <MoveSpeed>k__BackingField: 115
   <AttackRange>k__BackingField: 1
   <HealthGrowth>k__BackingField: 35
   <AttackGrowth>k__BackingField: 2

@@ -170,7 +170,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.115
+  m_Radius: 0.25
 --- !u!114 &750445964093191898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,4 +184,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <UnitData>k__BackingField: {fileID: 11400000, guid: 80f3796d7e5af3d47b0f3de6fa64f9bc, type: 2}
-  hitProjectile: {fileID: 0}
+  townHallPos: {x: 0, y: 0, z: 0}

@@ -19,7 +19,7 @@ public class UIStatistics : MonoBehaviour
         spawnManager.Die += view.EXP_Slider;
         view.LevelUP += selectManager.GetRandomSelect;
         spawnManager.EnemyLevel += view.EnemyLevel_Txt;
-        view.EnemySpawnSpeed_Txt(spawnManager.spawnTimer);
+
         selectManager.TowerAmount += () =>
         {
             towerCount++;
@@ -40,6 +40,7 @@ public class UIStatistics : MonoBehaviour
         timer += Time.deltaTime;
         view.Timer_Txt(timer);
         view.EnemySpawnAmount_Txt(spawnManager.EnemyAmount);
+        view.EnemySpawnSpeed_Txt(spawnManager.spawnTimer);
         view.TownHallHealth_Txt();
         view.Gold_Txt();
     }

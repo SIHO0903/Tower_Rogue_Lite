@@ -56,9 +56,9 @@ public class UIUpgrade : MonoBehaviour
     }
     void InitData()
     {
-        CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
+        CurrentUpgradeLvl upgradeData = JsonDataManager.JsonLoad<CurrentUpgradeLvl>(JsonDataManager.JsonFileName.Upgrade);
         UpgradeData.TowerAttackDamage = upgradeData.level[0] * 1;
-        UpgradeData.TowerAttackSpeed = -upgradeData.level[1] * 0.1f;
+        UpgradeData.TowerAttackSpeed = -upgradeData.level[1] * 0.03f;
         UpgradeData.TownHallHealth = upgradeData.level[4] * 50 + 50;
         UpgradeData.LevelChoice = upgradeData.level[5] * 1 + 3;
         UpgradeData.RerollCount = upgradeData.level[6] * 1;

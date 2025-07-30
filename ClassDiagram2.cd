@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CoroutineUtility" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\CoroutineUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CurrentUpgradeLvl" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\CurrentUpgradeLvl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMeleeAttack" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\EnemyMeleeAttack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EnemyRangeAttack" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\EnemyRangeAttack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GoldSaveData" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\GoldSaveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GridTxtInfo" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\Class\GridTxtInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GridUtility" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\GridUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JsonDataManager" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\JsonDataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SynergyPosition" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAACAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\SynergyPosition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerInfo" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAACAAAAAAAQAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\TowerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpgradeBaseDataSO" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIEABAAAAAEABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\UpgradeBaseDataSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpgradeData" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAACAAABCAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\UpgradeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewUpgradeContext" Collapsed="true">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAAAAAAAEAACAAAAWAACABAASUACABAA=</HashCode>
+      <FileName>Assets\Scripts\Class\ViewUpgradeContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VolumeData" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\VolumeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSVtoSO" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CSVtoSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DamageTxt" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAABAAgAAAAAACABAAAAAEAIAAAQAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\DamageTxt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseState&lt;T&gt;" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\BaseState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BaseUnit" Collapsed="true">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAAACQAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\BaseUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeleeEnemy" Collapsed="true">
+    <Position X="7.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\MeleeEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RangeEnemy" Collapsed="true">
+    <Position X="10" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\RangeEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackState&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAACAAAAAAAQAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\States\AttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DieState&lt;T&gt;" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\States\DieState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GetHitState&lt;T&gt;" Collapsed="true">
+    <Position X="15.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\States\GetHitState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdleState&lt;T&gt;" Collapsed="true">
+    <Position X="17.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\States\IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveState&lt;T&gt;" Collapsed="true">
+    <Position X="8.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\States\MoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitDataSO" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACACAAAAAgBAAAAgAAAAAAAAAAIABBEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\UnitDataSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnitState&lt;T&gt;" Collapsed="true">
+    <Position X="9" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACAACAAICAhIAQAAEAgAEAAAABEAAACAAQCaEA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\UnitState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GridDrawer" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAABCBQAQACAAAAQAgAAAIAAAAAAAAAgAEA=</HashCode>
+      <FileName>Assets\Scripts\GridDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="17.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAABAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MinerManager" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAgAAABAAAAAAAAAgAIBAAAAAAAAEIIAIAAAEE=</HashCode>
+      <FileName>Assets\Scripts\Managers\MinerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoolType" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEAAAAAAAAAEAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\PoolManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoolManager" Collapsed="true">
+    <Position X="15.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\PoolManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundManager" Collapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAACAACAAEAAAgFAABAAABAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnManager" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQGQAAAACIAAAgAAAAAIgAAABCAQAAAgEBAEAQIEA=</HashCode>
+      <FileName>Assets\Scripts\Managers\SpawnManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerManager" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQEAhAAACQgQgAAQAGAIAAAAAABAACIAhAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\TowerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton&lt;T&gt;" Collapsed="true">
+    <Position X="16.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Singleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TEMPButton" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TEMPButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AOETower" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\AttackTower\AOETower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackTower" Collapsed="true">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwgAAAAUCACIAABIAAIAEAAAZAAwBAAAAAAAAIhMIQ=</HashCode>
+      <FileName>Assets\Scripts\Tower\AttackTower\AttackTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireTower" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\AttackTower\FireTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NormalTower" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\AttackTower\NormalTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenetrationTower" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\AttackTower\PenetrationTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseTower" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAECIAEBAAAAAAABgAAAAAAAAACABEA=</HashCode>
+      <FileName>Assets\Scripts\Tower\BaseTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyProjectile" Collapsed="true">
+    <Position X="11.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\Proectile\EnemyProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendlyProjectile" Collapsed="true">
+    <Position X="13.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tower\Proectile\FriendlyProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projectile" Collapsed="true">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAgAhBAAAAAAAAAAAABACAAAAAACAAAAGEA=</HashCode>
+      <FileName>Assets\Scripts\Tower\Proectile\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectileEffect" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAACAQAAAgAAAAAAAAAAAAAAAAAAAAACAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Tower\Proectile\ProjectileEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SynergyTower" Collapsed="true">
+    <Position X="17.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAAAACCCAg=</HashCode>
+      <FileName>Assets\Scripts\Tower\SynergyTower\SynergyTower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TownHall" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Tower\SynergyTower\TownHall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerDataSO" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAEAAQCAAAAEAAAAAAAAAAAAIAAAAAAAAAAEI=</HashCode>
+      <FileName>Assets\Scripts\Tower\TowerDataSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerSpriteDataSO" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAgDgIAAARAAAACAAIAAAAAAAIAAAARAEAAIA=</HashCode>
+      <FileName>Assets\Scripts\Tower\TowerSpriteDataSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIInGameMenu" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAACAAAAAAAgAAAQAAAAAACAAAAAAAAgAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\UIInGameMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UISelect" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQOAAAAACAAAAAABAAABAAAACAAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\UISelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIStatistics" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAASAAAAAAAAAAAAAQAABAQAAAAQAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\UIStatistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIUpgrade" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAgAEACAAAAgAAEAACAAQAAAAAAAIAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\UIUpgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewGameEnd" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewGameEnd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewGameStart" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewGameStart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewInGameOption" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACAAAAABQAAACAAAAAAAAAgAACAgAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewInGameOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewSelect" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAQAAUAQAAAAAAAAAAAACAABAgAAAAIEE0=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewStatistics" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AERIABABAAUCAIYACBEIQAAEACUBBAAAFAAOAgQDABA=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewStatistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewUpgrade" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAABAAEAiQAAAAAAEgCAAEEABAAQAAAwAgQAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\ViewUpgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IAttack" Collapsed="true">
+    <Position X="20" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Class\IAttack.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IState&lt;T&gt;" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\IState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SynergyEnum" Collapsed="true">
+    <Position X="27" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAISAAAAAAAAAAAAAAAAAAEAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Class\GridUtility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EUnit" Collapsed="true">
+    <Position X="21.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAIAAAAAgAAAAAAAAAIAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemy\UnitState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PoolEnum" Collapsed="true">
+    <Position X="23.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAACAAAAQAAAAAAAAAAAAIACAAAAAAAAIAAIIA=</HashCode>
+      <FileName>Assets\Scripts\Managers\PoolManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoundType" Collapsed="true">
+    <Position X="25.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAACAAg=</HashCode>
+      <FileName>Assets\Scripts\Managers\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BGMType" Collapsed="true">
+    <Position X="20" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Managers\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

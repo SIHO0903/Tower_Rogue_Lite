@@ -18,7 +18,7 @@ public class RangeEnemy : UnitState<RangeEnemy>
     }
     private void Update()
     {
-        Debug.Log("currentState : " + currentState.GetType().Name);
+        //Debug.Log("currentState : " + currentState.GetType().Name);
         currentState.UpdateState(this);
     }
 }

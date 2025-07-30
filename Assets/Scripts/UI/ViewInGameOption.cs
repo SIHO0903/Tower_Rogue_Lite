@@ -18,7 +18,7 @@ public class ViewInGameOption : MonoBehaviour
         {
             //계속하기
             Time.timeScale = 1f;
-            Constants.JsonSave<VolumeData>(GetVolume(), Constants.JsonFileName.Volume);
+            JsonDataManager.JsonSave<VolumeData>(GetVolume(), JsonDataManager.JsonFileName.Volume);
             gameObject.SetActive(gameObject.activeSelf ? false : true);
         });
         LoadVolume();
@@ -40,12 +40,12 @@ public class ViewInGameOption : MonoBehaviour
     }
     public void LoadVolume()
     {
-        VolumeData volumeData = Constants.JsonLoad<VolumeData>(Constants.JsonFileName.Volume);
+        VolumeData volumeData = JsonDataManager.JsonLoad<VolumeData>(JsonDataManager.JsonFileName.Volume);
         if(volumeData == null)
         {
             volumeData = new VolumeData(0.5f, 0.5f);
 
-            Constants.JsonSave(volumeData, Constants.JsonFileName.Volume);
+            JsonDataManager.JsonSave(volumeData, JsonDataManager.JsonFileName.Volume);
         }
         BGMSlider.value = volumeData.bgm;
         SFXSlider.value = volumeData.sfx;
@@ -56,7 +56,7 @@ public class ViewInGameOption : MonoBehaviour
         {
             gameObject.SetActive(false);
             Time.timeScale = 1f;
-            Constants.JsonSave<VolumeData>(GetVolume(), Constants.JsonFileName.Volume);
+            JsonDataManager.JsonSave<VolumeData>(GetVolume(), JsonDataManager.JsonFileName.Volume);
         }
         else
         {

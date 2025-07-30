@@ -56,7 +56,7 @@ public class ViewStatistics : MonoBehaviour
     }
     void Score_Txt(float score)
     {
-        Txt_Score.text = score.ToString();
+        Txt_Score.text = string.Format($"{score:F0}");
     }
     public void EnemyLevel_Txt(float enemyScaling)
     {
@@ -95,8 +95,9 @@ public class ViewStatistics : MonoBehaviour
             currentLevel += 1;
             Level_Txt(currentLevel);
             LevelUP?.Invoke(currentLevel);
-            currentEXP = 0;
-            totalEXP += 20;
+            currentEXP -= totalEXP;
+            currentEXP = currentEXP > 0 ? currentEXP : 0;
+            totalEXP += 12;
             Slider_EXP.value = currentEXP / totalEXP;
         }
         GetGold();
@@ -113,7 +114,7 @@ public class ViewStatistics : MonoBehaviour
     }
     void GetGold()
     {
-        if(Random.value <= 0.1f)
+        if(Random.value <= 0.5f)
         {
             MinerManager.Gold += 3;
         }
@@ -123,7 +124,7 @@ public class ViewStatistics : MonoBehaviour
         score = 0;
         Score_Txt(score);
 
-        CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
+        CurrentUpgradeLvl upgradeData = JsonDataManager.JsonLoad<CurrentUpgradeLvl>(JsonDataManager.JsonFileName.Upgrade);
         UpgradeData.TownHallHealth = upgradeData.level[4] * 50 + 50;
         TownHallHealth_Txt();
 

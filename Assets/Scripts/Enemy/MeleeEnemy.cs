@@ -20,7 +20,6 @@ public class MeleeEnemy : UnitState<MeleeEnemy>
     }
     private void Update()
     {
-        Debug.Log("currentState : " + currentState.GetType().Name);
         currentState.UpdateState(this);
     }
 }

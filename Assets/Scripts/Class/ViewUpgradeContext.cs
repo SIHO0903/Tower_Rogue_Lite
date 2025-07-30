@@ -66,11 +66,11 @@ public class ViewUpgradeContext
 
     private void SaveCurrentLevelToJson()
     {
-        CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
+        CurrentUpgradeLvl upgradeData = JsonDataManager.JsonLoad<CurrentUpgradeLvl>(JsonDataManager.JsonFileName.Upgrade);
 
         upgradeData.level[key] = currentLevel;
 
-        Constants.JsonSave(upgradeData, Constants.JsonFileName.Upgrade);
+        JsonDataManager.JsonSave(upgradeData, JsonDataManager.JsonFileName.Upgrade);
     }
 
     public void AddBtn(Action action)

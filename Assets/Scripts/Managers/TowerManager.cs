@@ -67,16 +67,15 @@ public class TowerManager : MonoBehaviour
             gridDrawer.gameObject.SetActive(false);
 
             Vector3 targetPos = ClampTilePosition(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            Vector3 oldPos = Constants.SnapToGrid(selectedTower.transform.position);
+            Vector3 oldPos = GridUtility.SnapToGrid(selectedTower.transform.position);
 
             if (oldPos == targetPos)
             {
                 ClearGhost();
                 return;
             }
-            UpdateTileGrid(oldPos, targetPos, selectedTower.gameObject);
-            UpdateTowerGridTxt();
             gridDrawer.UpdateTileGridTxt(oldPos);
+            UpdateTileGrid(oldPos, targetPos, selectedTower.gameObject);
             ClearGhost();
         }
     }
@@ -105,7 +104,6 @@ public class TowerManager : MonoBehaviour
     {
         if (!tileGrid.ContainsKey(newPos))
         {
-            Debug.Log("새로운곳에 놓기");
             tileGrid.Add(newPos, towerObj);
             tileGrid.Remove(oldPos);
             towerObj.transform.position = newPos;
@@ -192,8 +190,8 @@ public class TowerManager : MonoBehaviour
     public Vector3 ClampTilePosition(Vector3 pos)
     {
         Vector2 gridOrigin = new Vector2(-3.8f, 1.3f);
-        float x = Mathf.Round((Mathf.Clamp(pos.x, -3.8f, -1.2f) - gridOrigin.x) / Constants.TileGap) * Constants.TileGap + gridOrigin.x;
-        float y = Mathf.Round((Mathf.Clamp(pos.y, -1.3f, 1.3f) - gridOrigin.y) / Constants.TileGap) * Constants.TileGap + gridOrigin.y;
-        return Constants.SnapToGrid(new Vector3(x, y));
+        float x = Mathf.Round((Mathf.Clamp(pos.x, -3.8f, -1.2f) - gridOrigin.x) / GridUtility.TileGap) * GridUtility.TileGap + gridOrigin.x;
+        float y = Mathf.Round((Mathf.Clamp(pos.y, -1.3f, 1.3f) - gridOrigin.y) / GridUtility.TileGap) * GridUtility.TileGap + gridOrigin.y;
+        return GridUtility.SnapToGrid(new Vector3(x, y));
     }
 }

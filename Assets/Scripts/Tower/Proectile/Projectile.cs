@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
     }
     private void OnEnable()
     {
-        StartCoroutine(Constants.SetActiveFalse(gameObject, 3f));
+        StartCoroutine(CoroutineUtility.SetActiveFalse(gameObject, 3f));
     }
     public void Init(float damage, string effectName, int current_tier)
     {

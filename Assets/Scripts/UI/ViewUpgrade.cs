@@ -35,12 +35,12 @@ public class ViewUpgrade : MonoBehaviour
         rerollCountUpgradeLevel =   new ViewUpgradeContext(OBJ_rerollCountUpgradeLevel);
         expDropRateUpgradeLevel =   new ViewUpgradeContext(OBJ_expDropRateUpgradeLevel);
 
-        CurrentUpgradeLvl upgradeData = Constants.JsonLoad<CurrentUpgradeLvl>(Constants.JsonFileName.Upgrade);
+        CurrentUpgradeLvl upgradeData = JsonDataManager.JsonLoad<CurrentUpgradeLvl>(JsonDataManager.JsonFileName.Upgrade);
         if (upgradeData == null)
         {
             upgradeData = new CurrentUpgradeLvl();
             upgradeData.Init();
-            Constants.JsonSave(upgradeData, Constants.JsonFileName.Upgrade);
+            JsonDataManager.JsonSave(upgradeData, JsonDataManager.JsonFileName.Upgrade);
         }
         atkDmgUpgradeLevel.Init(upgradeBaseDataSOs[0], upgradeData.level[0]);
         atkSpdUpgradeLevel.Init(upgradeBaseDataSOs[1], upgradeData.level[1]);

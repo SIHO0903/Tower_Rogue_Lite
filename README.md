@@ -9,7 +9,7 @@
 ----------------------------------------------------
 Unity로 제작한 포트폴리오입니다.
 
-defense.pptx에 영상및 스크립트설명이 있습니다.
+타워디펜스PDF.pdf에 영상및 스크립트설명이 있습니다.
 
 [https://youtu.be/fjwn0BxfbkA](https://youtu.be/ab3zOuBRLXs)
 게임실행 영상입니다.
